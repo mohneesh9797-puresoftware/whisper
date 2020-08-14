@@ -25,6 +25,23 @@ matrix:
     - python: 3.7
       env:
         - TOXENV=lint
+    - arch : arm64
+      python: 3.6
+      env:
+        - TOXENV=py36
+    - arch : arm64
+      python: 3.7
+      env:
+        - TOXENV=py37
+    - arch: arm64
+      python: "3.8-dev"
+      env:
+       - TOXENV=py38
+    - arch: arm64
+      python: 3.7
+      env:
+        - TOXENV=lint
+
   allow_failures:
     - python: "3.8-dev"
 
